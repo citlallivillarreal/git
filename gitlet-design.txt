@@ -1,0 +1,49 @@
+Gitlet Design Document
+----------------------
+
+
+Classes and Data Structures
+---------------------------
+**** Gitlet class ****
+This class initializes a new repository.
+** Fields **
+Hashmap <String, String> commits: A map representing file name to SHA-1 code mapping.
+
+**** Commits class ****
+This class creates commit objects and keeps track of them.
+
+** Fields **
+String parent: Saves parent SHA-1 code for purposes of reverting to a previous commit.
+String time: Saves the timestamp of commit.
+String master: Saves the reference to the current branch.
+String head: Saves the reference to the latest commit.
+String message: Saves commit message.
+
+**** Stage Class ****
+This class stores files added in either the staging for addition or staging for removal area.
+
+** Fields **
+List<String> adds: Keeps track of the files in the staging for addition area in order to ensure the correct files
+are being "Staged" for "committing" purposes.
+List<String> removes: Keeps track of the files in the staging for removal area in order to ensure ???????HELP
+
+Algorithms
+----------
+**** Gitlet class ****
+1. Gitlet(): The class constructor.
+
+**** Commits class ****
+1. Commit(): The class constructor.
+
+**** Stage Class ****
+
+Persistence
+-----------
+1. Write the Gitlet hashmap to disk. We can serialize them into bytes (through serialization) stream and write them
+to a specifically named file on disk through the writeObject method in the Utils.java class.
+2. Write the Staging List<String> adds to disk. We can serialize them into bytes (through serialization) stream and
+write them to a specifically named file on disk through the writeObject method in the Utils.java class.
+3. Write the Commit String master to disk. We can serialize them into bytes (through serialization) stream and write
+them to a specifically named file on disk through the writeObject method in the Utils.java class.
+4. Write the Commit String head on disk. We can serialize them into bytes (through serialization) stream and write
+them to a specifically named file on disk through the writeObject method in the Utils.java class.
