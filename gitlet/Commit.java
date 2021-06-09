@@ -11,7 +11,7 @@ import java.util.HashMap;
 
 /** Commit class for constructing and accessing
  *  particular attributes of a commit.
- *  @author Citlallic Gutierrez*/
+ *  @author Citlalli Villarreal*/
 class Commit implements Serializable {
     /** Costructs a commit given a PARENT, MESSAGE, FILES, and INITIAL. */
     Commit(String parent, String message,

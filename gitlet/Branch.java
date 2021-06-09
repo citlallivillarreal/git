@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.HashMap;
 
 /** A branch class representing the branch pointers in gitlet.
- * @author Citlallic Gutierrez */
+ * @author Citlalli Villarreal */
 public class Branch implements Serializable {
     /** A hashmap mapping a branch name to commit id. */
     private HashMap<String, String> _branchmap;

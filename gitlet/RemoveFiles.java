@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.HashMap;
 
 /** Class for representing the state of the currently removed files.
- * @author Citlallic Gutierrez*/
+ * @author Citlalli Villarreal*/
 public class RemoveFiles implements Serializable {
 
     /** A hashmap mapping a file content sha to file name. */

@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 /** Gitlet class at which is serializable and
  * handles the functionalities of gitlet.
- * @author Citlallic Gutierrez */
+ * @author Citlalli Villarreal */
 
 class Gitlet implements Serializable {
     /** Path to working directory. */

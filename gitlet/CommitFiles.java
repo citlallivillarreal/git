@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.HashMap;
 
 /** Class for representing the state of the staged files.
- * @author Citlallic Gutierrez */
+ * @author Citlalli Villarreal */
 public class CommitFiles implements Serializable {
 
     /** A hashmap mapping a file content sha to file name. */
